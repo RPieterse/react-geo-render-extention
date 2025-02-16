@@ -1,8 +1,12 @@
 {
   "name": "georender-extention",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "type": "module",
-  "description": "Render pages based on geo location data from the user",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "description": "Render react pages with react-router-dom based on geo location data from the user",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "keywords": [
@@ -18,8 +22,7 @@
   "author": "Rohan Pieterse",
   "license": "ISC",
   "dependencies": {
-    "react-router-dom": "^7.1.5",
-    "rollup-plugin-peer-deps-external": "^2.2.4"
+    "react-router-dom": "^7.1.5"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0",
@@ -32,6 +35,7 @@
     "@babel/preset-react": "^7.26.3",
     "@rollup/plugin-babel": "^6.0.4",
     "babel-preset-react": "^6.24.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup": "^4.34.7"
   }
 }
