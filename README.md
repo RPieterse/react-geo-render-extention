@@ -37,8 +37,8 @@ import CanadaPage from "./CanadaPage";
 
 const routes = [
   { path: "/", element: <HomePage /> },
-  { path: "/us", element: <USPage />, geoLocation: { country: "US" } },
-  { path: "/canada", element: <CanadaPage />, geoLocation: { country: "CA" } },
+  { path: "/", element: <USPage />, geoLocation: { country: "US" } },
+  { path: "/", element: <CanadaPage />, geoLocation: { country: "CA" } },
 ];
 
 const App = () => (
