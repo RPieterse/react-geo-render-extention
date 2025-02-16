@@ -82,12 +82,12 @@ const customGeoFetcher = async () => {
 {
   path: string;
   element: JSX.Element;
-  name?: string;
   geoLocation?: {
     country?: string;
     city?: string;
     zip?: string;
   };
+  ...any other path props as defined in react-router-dom RouteProps
 }
 ```
 

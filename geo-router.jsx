@@ -42,11 +42,12 @@ const GeoRender = ({ routes, getGeoData = defaultGeoFetcher, loadingElement = de
 
     return (
         <Routes>
-            {routes.map(({ path, element, geoLocation }, index) => {
+            {routes.map(({ path, element, geoLocation, ...rest }, index) => {
                 return (
                     <Route
                         key={index}
                         path={path}
+                        {...rest}
                         element={
                             geoLocation && !checkGeoMatch(geoLocation, userGeo) ? (
                                 <Navigate to={routes.find((r) => r.path === path && !r.geoLocation)?.path || "/"} />
